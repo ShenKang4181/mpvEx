@@ -17,7 +17,7 @@ android {
   compileSdk = 36
 
   defaultConfig {
-    applicationId = "app.marlboroadvance.mpvex"
+    applicationId = "com.youku.phone"
     minSdk = 26
     targetSdk = 36
     versionCode = 127
@@ -81,11 +81,11 @@ android {
 
       // Explicitly disable signing to produce unsigned APKs for CI
       signingConfig = null
-      applicationIdSuffix = ".preview"
+      applicationIdSuffix = ""
       versionNameSuffix = "-${getCommitCount()}"
     }
     named("debug") {
-      applicationIdSuffix = ".debug"
+      applicationIdSuffix = ""
       versionNameSuffix = "-${getCommitCount()}"
     }
   }
